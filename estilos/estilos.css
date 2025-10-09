@@ -1,0 +1,123 @@
+.header { /* header comun para todas las paginas */
+  padding: 50px;
+  text-align: center;
+  background: #f2b47b;
+  color: black;
+  padding-top: 40px;
+  padding-bottom: 40px; /* estos padding crean el espacio debajo del título en h1 */
+  padding-left: 40px;
+  padding-right: 20px;
+  font-family: Verdana;
+}
+
+.footer { /* footer comun de  la web */
+  padding: 30px;
+  text-align: center;
+  background: #f2b47b;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Verdana;
+}
+
+.webphrase { /*frase de la web */
+  text-align: center;
+  font-family: Verdana;
+}
+
+.navmenu { /* menu en sí */
+  background-color: #FFC585;
+  text-align: center;
+  padding: 20px;
+  font-family: Verdana;
+  font-size: 20px;
+}
+
+.navmenu a { /* texto del menu */
+  display: inline-block;
+  background-color: #b8b1d8;
+  padding: 10px, 20px; /* espacio alrededor del texto */
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #726863;
+  box-shadow: 0 0 0 3px #BDAD95;
+
+  /* modifica el botón en sí */
+  min-width: 200px;
+  min-height: 20px;
+  line-height: 50px;
+}
+
+.navmenu a:hover { /* lo que pasa al hacer hover encima del menu */
+  transform: scale(1.05);
+  color: #E8DFD1;
+}
+
+.content { /* css para el contenido comun a todas las paginas */
+  background-color: #e3ead2;
+/*   width: 1000px; /* ajusta el ancho que ocupan los textos */
+  margin: 0 auto; /* centrado horizontal */
+  overflow: hidden; /* ensancha el contenido para que ocupe todo el espacio sin tocar otros márgenes/padding */
+  font-family: Verdana;
+  text-align: center;
+}
+
+.content .inner { /* creo nuevo css para el contenido de dentro del content */
+  max-width: 1000px;  /* limita el ancho del texto */
+  margin: 0 auto;     /* centra el texto */
+  padding: 20px;      /* opcional: espacio interno */
+}
+
+.content ul, ol { /* css para las listas */
+  list-style-position: inside;
+  text-align: left;
+  display: inline-block;
+  width: 700px; /* ajusta el ancho que ocupan las listas */
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.content img { /* css para que todas las imagenes aparezcan igual */
+  display: block;
+  margin: 30px auto; /* margen superior e inferior, y centrado horizontal */
+  max-width: 100%; /* hace que la imagen no se desborde en pantallas pequeñas */
+  height: auto; /* mantiene proporciones */
+}
+
+.gallery { /* preparando un css especial para la sección top_destinos */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 40px; /* Espacio entre imágenes */
+  width: 95%; /* ocupa todo el ancho del contenedor */
+  margin: 0 auto;
+}
+
+.gallery img { /* estilo de las imágenes en sí */
+  width: 100%; /* ocupa todo el ancho del contenedor */
+  height: auto;
+  border-radius: 8px; /*redondea las imagenes */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.table { /* css para el contenido comun a todas las paginas */
+  background-color: #BBFCCD;
+  display: inline-block;
+  font-family: Verdana;
+  text-align: center;
+}
+
+.form { /* estilo del formulario de contacto */
+  background-color: #F0E3C0;
+  border: 2px solid black; /* hace borde al elemento */
+  max-width: 200px;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%; /* ocupa todo el ancho del contenedor */
+  margin: 30px auto; /* centra en el medio el formulario */
+  display: flex; /* activa flexbox */
+  flex-direction: column; /* organiza los hijos en columna */
+  gap: 10px; /* espacio entre los elementos internos */
+}
