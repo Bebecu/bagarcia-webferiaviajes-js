@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- establezco la cabecera de la página -->
+<html lang="es">
+<head>
+  <link rel="stylesheet"href="estilos/estilos.css" />
+  <title>WEbFERiaVIajes - Contacto</title>
+  <meta charset="UTF-8">
+</head>
+
+<body> <!-- contenido del header de la página -->
+  <header class="header">
+    <h1>WEFERVI - Contacto</h1>
+    <p class="webphrase">Una web en la que todo gira alrededor de los viajes. ¿Viajamos juntos?</p>
+  </header>
+
+  <div class="navmenu"><a href="index.html">Inicio</a> <!-- comienza el contenido de la página -->
+    <a href="vuelos.html">Vuelos</a>
+    <a href="alojamiento.html">Alojamiento</a>
+    <a href="top_destinos.html">Top Destinos</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <main class="content">
+    <p>
+
+      <img src="imagenes/contacto.jpg" width="100" alt="Contacto 24" style="border-radius: 60px;"> /* aplicando estilo solo a esta imágen */
+
+      Utiliza <b>este formulario</b> para enviarnos cualquier duda, información, o lo que quieras compartir con nosotros para mejorar la web.
+
+        <form class="form" action="mailito:webfervi@tareabirt.eus" method="get" enctype="text/plain"> <!-- Con mailito le digo que abra en el cliente el cliente de email para enviarlo -->
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required>
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="email" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+      ¡Responderemos a la mayor brevedad posible! Gracias por tu interés. :)<br>
+
+      <br><i>Si el asunto es muy importante, te recomendamos
+      echar un vistazo a la página de <a href="https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Recomendaciones-de-viaje.aspx" target="_blank">
+      viajes</a> del Gobierno de España.</i>
+
+    </p>
+  </main>
+
+  <footer class="footer"> <!--pie de la página -->
+    <p>™ Todos los derechos reservados.</p>
+    <i>Todas las imágenes han sido descargadas de <a href="https://pixabay.com/" target="_blank">Pixabay</a> y son de uso libre.</i>
+  </footer>
+
+</body>
+</html>
