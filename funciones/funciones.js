@@ -48,4 +48,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* código validación formulario */
+/* código colores tabla */
+document.addEventListener("DOMContentLoaded", function() {
+  const tabla = document.getElementById("tabla");
+  if (tabla) {
+    const filas = tabla.querySelectorAll("tbody tr");
+
+    filas.forEach(fila => {
+      fila.style.backgroundColor = "#BBFCCD"; /* color base de las filas */
+
+      fila.addEventListener("mouseover", function() { /* cambio de color si la fila tiene el ratón encima */
+        if (fila.style.backgroundColor === "rgb(187, 252, 205)" || fila.style.backgroundColor === "#BBFCCD") {
+          fila.style.backgroundColor = "#8EE8A5";
+        }
+      });
+
+      fila.addEventListener("mouseout", function() { /* vuelta al color normal si no tiene el mouse encima */
+        fila.style.backgroundColor = "#BBFCCD";
+      });
+    });
+  }
+});
+
+
+/* código página vuelos */
+document.addEventListener("DOMContentLoaded", () => {
+  const imagen = document.querySelector("img[alt='Avión volando entre las nubes']"); /* selecciono la imágen por el texto alternativo en vez de por ID, para variar */
+  if (imagen) {
+    imagen.addEventListener("mouseover", () => { /* al pasar el raton, se desplaza por el eje Y en negativo (hacia arriba) y sale una sombra en la caja */
+      imagen.style.transform = "translateY(-10px)";
+      imagen.style.transition = "transform 0.5s";
+      imagen.style.boxShadow = "0 0 25px rgba(0, 0, 0, 0.5)";
+    });
+
+    imagen.addEventListener("mouseout", () => { /* vuelta a su sitio cuando no tiene el mouse encima */
+      imagen.style.transform = "translateY(0)";
+      imagen.style.boxShadow = "none";
+    });
+
+  }
+});
