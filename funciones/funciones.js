@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
       img.addEventListener("mouseover", () => { /* al pasar el mouse */
         img.style.transform = "scale(2.2)"; /* escalo la imagen */
         img.style.transition = "transform 0.4s"; /* tiempo que tarda en escalar */
+        img.style.zIndex = "10"; /* hace que esté por encima de las demás */
+        img.style.position = "relative"; /* necesario para que z-index funcione */
       });
       img.addEventListener("mouseout", () => { /* al quitar el mouse */
         img.style.transform = "scale(1)"; /* vuelta a su tamaño normal */
