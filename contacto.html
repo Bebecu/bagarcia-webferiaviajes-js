@@ -22,19 +22,17 @@
   <main class="content">
     <p>
 
-      <img src="imagenes/contacto.jpg" width="100" alt="Contacto 24" style="border-radius: 60px;"> /* aplicando estilo solo a esta imágen */
+      <img src="imagenes/contacto.jpg" width="100" alt="Contacto 24" style="border-radius: 60px;"> <!--  aplicando estilo solo a esta imágen -->
 
       Utiliza <b>este formulario</b> para enviarnos cualquier duda, información, o lo que quieras compartir con nosotros para mejorar la web.
 
-        <form class="form" action="mailito:webfervi@tareabirt.eus" method="get" enctype="text/plain"> <!-- Con mailito le digo que abra en el cliente el cliente de email para enviarlo -->
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" required>
+        <form class="form" action="mailto:webfervi@tareabirt.eus" method="get" enctype="text/plain" id="formulario"> <!-- Con mailito le digo que abra en el cliente el cliente de email para enviarlo -->
+          <p> Nombre: <input type="text" name="nombre" id="nombre"></p>
 
-          <label for="correo">Correo electrónico:</label>
-          <input type="email" id="email" required>
+          <p> Correo electrónico: <input type="email" name="email" id="email"></p>
 
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <p> Mensaje: <textarea id="mensaje" name="mensaje" rows="4"></textarea></p>
 
           <button type="submit">Enviar</button>
         </form>
@@ -52,6 +50,8 @@
     <p>™ Todos los derechos reservados.</p>
     <i>Todas las imágenes han sido descargadas de <a href="https://pixabay.com/" target="_blank">Pixabay</a> y son de uso libre.</i>
   </footer>
+
+  <script src="funciones/funciones.js"></script>
 
 </body>
 </html>
