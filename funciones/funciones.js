@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     imagenes.forEach(img => { /* voy pasando por cada elemento para que haga una acción en cada una */
       img.addEventListener("mouseover", () => { /* al pasar el mouse */
         imagenes.forEach(i => i.style.zIndex = "0"); /* reseteamos la posición de cada imágen para que no haya problema con la superposición */
-        img.style.transform = "scale(2.2)"; /* escalo la imagen */
+        img.style.transform = "scale(2.0)"; /* escalo la imagen */
         img.style.transition = "transform 0.4s"; /* tiempo que tarda en escalar */
         img.style.zIndex = "10"; /* hace que esté por encima de las demás */
         img.style.position = "relative"; /* necesario para que z-index funcione */
@@ -91,4 +91,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 });
+
 
