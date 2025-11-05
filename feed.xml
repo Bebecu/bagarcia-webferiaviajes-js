@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+  <rss version="2.0">
+   <channel>
+       <title>SORTEO DE VIAJE PARA DOSs</title>
+       <pubDate>Miércoles 5 de Noviembre de 2025</pubDate>
+       <link>https://bebecu.github.io/bagarcia-webferiaviajes-js/sorteo.html</link>
+       <description>Como premio a la curiosidad, tienes la posibilidad de entrar en el sorteo de un viaje para dos personas.</description>
+       <item>
+          <title>¡Los mejores destinos en la actualidad!</title>
+          <pubDate>Miércoles 5 de Noviembre de 2025</pubDate>
+          <link>https://bebecu.github.io/bagarcia-webferiaviajes-js/top_destinos.html</link>
+          <description>Embárcate en tu nueva aventura con nuestros consejos sobre destinos.</description>
+       </item>
+    </channel>
+  </rss>

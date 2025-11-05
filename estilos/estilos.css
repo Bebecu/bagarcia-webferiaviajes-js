@@ -121,3 +121,13 @@
   flex-direction: column; /* organiza los hijos en columna */
   gap: 10px; /* espacio entre los elementos internos */
 }
+
+.rss-container {
+  text-align: center; /* Centra el contenido dentro del contenedor */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.rss-container a {
+  display: inline-block; /* Hace que el enlace sea un bloque en línea */
+  text-align: center; /* Centra el texto dentro del enlace */
+}
