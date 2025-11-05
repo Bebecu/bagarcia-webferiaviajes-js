@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
   <rss version="2.0">
    <channel>
+     <item>
        <title>SORTEO DE VIAJE PARA DOSs</title>
        <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
        <link>https://bebecu.github.io/bagarcia-webferiaviajes/sorteo.html</link>
        <description>Como premio a la curiosidad, tienes la posibilidad de entrar en el sorteo de un viaje para dos personas.</description>
-       <item>
+     </item>
+      <item>
           <title>¡Los mejores destinos en la actualidad!</title>
           <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
           <link>https://bebecu.github.io/bagarcia-webferiaviajes/top_destinos.html</link>
